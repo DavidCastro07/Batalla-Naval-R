@@ -69,32 +69,61 @@ public class CampoBatalla {
 	}
 
 	public void agregarBarco(Barco barco){
-		boolean verificador = false;
 		if (barco.getDireccion()){//vertical
-			for (int i = barco.getCoordenada().getCoordX(); i <= barco.getCoordenada().getCoordX() + barco.getTamanio(); i++) {
-				for (int j = barco.getCoordenada().getCoordY(); j == barco.getCoordenada().getCoordY() ; j++) {
-					for (Coordenada coor : tablero){
-						if (coor.getCoordX().equals(i) &&
-						coor.getCoordY().equals(j) && coor.getBarco() == null){
-							coor.setBarco(barco);
+			if (verificarVertical(barco)){
+				for (int i = barco.getCoordenada().getCoordX(); i < barco.getCoordenada().getCoordX() + barco.getTamanio(); i++) {
+					for (int j = barco.getCoordenada().getCoordY(); j <= barco.getCoordenada().getCoordY() ; j++) {
+						for (Coordenada coor : tablero){
+							if (coor.getCoordX().equals(i) && coor.getCoordY().equals(j)){
+								coor.setBarco(barco);
+							}
 						}
 					}
 				}
+			}else {
+				System.out.println("No se puede agregar en esta coordenada");
 			}
 		}else{//horizontal
-			for (int i = barco.getCoordenada().getCoordX(); i == barco.getCoordenada().getCoordX(); i++) {
-				for (int j = barco.getCoordenada().getCoordY(); j <= barco.getCoordenada().getCoordY() + barco.getTamanio() ; j++) {
-					for (Coordenada coor : tablero){
-						if (coor.getCoordX().equals(i) &&
-								coor.getCoordY().equals(j) && coor.getBarco() == null){
-							coor.setBarco(barco);
+			if(verificarHorizontal(barco)){
+				for (int i = barco.getCoordenada().getCoordX(); i <= barco.getCoordenada().getCoordX(); i++) {
+					for (int j = barco.getCoordenada().getCoordY(); j < barco.getCoordenada().getCoordY() + barco.getTamanio() ; j++) {
+						for (Coordenada coor : tablero){
+							if (coor.getCoordX().equals(i) && coor.getCoordY().equals(j)){
+								coor.setBarco(barco);
+							}
 						}
 					}
 				}
+			}else {
+				System.out.println("No se puede agregar en esta coordenada");
 			}
 		}
 	}
 
+	public boolean verificarVertical(Barco barco){
+		for (int i = barco.getCoordenada().getCoordX(); i < barco.getCoordenada().getCoordX() + barco.getTamanio(); i++) {
+			for (int j = barco.getCoordenada().getCoordY(); j <= barco.getCoordenada().getCoordY() ; j++) {
+				for (Coordenada coord: tablero){
+					if (coord.getCoordX().equals(i) && coord.getCoordY().equals(j) && coord.getBarco() != null){
+						return false;
+					}
+				}
+			}
+		}
+		return true;
+	}
 
+	public boolean verificarHorizontal(Barco barco){
+		for (int i = barco.getCoordenada().getCoordX(); i <= barco.getCoordenada().getCoordX(); i++) {
+			for (int j = barco.getCoordenada().getCoordY(); j < barco.getCoordenada().getCoordY() + barco.getTamanio() ; j++) {
+				for (Coordenada coord : tablero){
+					if (coord.getCoordX().equals(i) && coord.getCoordY().equals(j) && coord.getBarco() != null){
+						return false;
+					}
+				}
+			}
+		}
+		return true;
+	}
 
 }

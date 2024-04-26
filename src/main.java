@@ -9,10 +9,16 @@ public class main {
 		campo.generarTablero();
 		campo.mostrarTablero();
 
-		Coordenada coordenadaBB = new Coordenada(0,0);
-		BarcoBatalla barcoBatalla = new BarcoBatalla(false, coordenadaBB);
+		Coordenada coordenadaBB1 = new Coordenada(0,0);
+		BarcoBatalla barcoBatalla1 = new BarcoBatalla(true, coordenadaBB1);
 
-		campo.agregarBarco(barcoBatalla);
+		campo.agregarBarco(barcoBatalla1);
+		campo.mostrarTablero();
+
+		Coordenada coordenadaBB2 = new Coordenada(0,1);
+		BarcoBatalla barcoBatalla2 = new BarcoBatalla(false, coordenadaBB2);
+
+		campo.agregarBarco(barcoBatalla2);
 		campo.mostrarTablero();
 		/*Scanner t = new Scanner(System.in);
 		int corX = 0;
