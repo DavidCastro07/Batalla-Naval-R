@@ -1,99 +1,66 @@
 package CampoBatalla;
 
 import java.util.ArrayList;
-
 import Coordenada.Coordenada;
-import interfezBarcos.interfazBarco;
+
 
 public class CampoBatalla {
-	
-	private ArrayList<interfazBarco> barcosEnCampo;
-	private ArrayList<Coordenada> tirosDados;
+
+	private Integer tamanioX;
+	private Integer tamanioY;
+	private ArrayList<Coordenada> tablero;
+	//private ArrayList<Coordenada> tirosDados;
 	private Coordenada disparo;
-	
-	
-	public CampoBatalla(){
-		barcosEnCampo = new ArrayList<interfazBarco>();
-		tirosDados = new ArrayList<Coordenada>();
-		
+
+	public CampoBatalla(Integer tamanioX, Integer tamanioY){
+		this.tamanioX = tamanioX;
+		this.tamanioY = tamanioY;
+		tablero = new ArrayList<Coordenada>();
+		//tirosDados = new ArrayList<Coordenada>();
 	}
-	
-	public void agregarBarco(interfazBarco barco){
-		
-		this.barcosEnCampo.add(barco);
-		
-	}
-	
-	public void disparar(Coordenada disparo){
-		this.disparo = disparo;
-		boolean disp = false;
-		
-		if(this.getTirosDados().size() == 0){
-			this.getTirosDados().add(disparo);
-			disp = true;
-		}else{
-			for(int i = 0; i < this.getTirosDados().size(); i++){
-				if(getDisparo().equals(this.getTirosDados().get(i))){
-					System.out.println("Ya se genero el tiro");
-					disp = false;
-					break;
-				}else{
-					System.out.println("Nuevo tiro");
-					disp = true;
-					this.getTirosDados().add(disparo);
-					break;
-				}
+
+	public void generarTablero(){
+		for (int i = 0; i < tamanioX; i++) {
+			for (int j = 0; j < tamanioY; j++) {
+				tablero.add(new Coordenada(i,j));
 			}
 		}
-		
-		if(disp){
-			for(int i = 0; i < barcosEnCampo.size(); i++){
-				this.barcosEnCampo.get(i).verficarHundimiento();
-				if(barcosEnCampo.get(i).verificarDisparo(this.getDisparo())){
-					System.out.println("Atino");
-					break;
-				}else{
-					System.out.println("No se atino");
+	}
+
+	public void mostrarTablero() {
+		// Mostrar índices de las columnas
+		System.out.print("  ");
+		for (int j = 0; j < tamanioY; j++) {
+			System.out.print(j + 1 + " ");
+		}
+		System.out.println();
+
+		// Mostrar el tablero con índices de las filas
+		for (int i = 0; i < tamanioX; i++) {
+			System.out.print(i + 1 + " "); // Índice de la fila
+			for (int j = 0; j < tamanioY; j++) {
+				boolean encontrado = false;
+				for (Coordenada coord : tablero) {
+					if (coord.getCoordX() == i && coord.getCoordY() == j) {
+						encontrado = true;
+						if(coord.getBarco() == null){
+							System.out.print("- "); // Si hay un barco en null, imprimir "-" seria el agua
+							break;
+						}else{
+							System.out.print("1 "); // Si hay una coordenada en esta posición, imprimir "1"
+							break;
+						}
+					}
+				}
+				if (!encontrado) {
+					System.out.print("0 "); // Si no hay una coordenada en esta posición, imprimir "0"
 				}
 			}
-			System.out.println("Se lanzo");
-		}else{
-			System.out.println("No se lanzo el tiro porque ya se habia lanzado");
-		}
-		
-		
-	}
-	
-	public void mostrarBarcos(){
-		for(int i = 0; i < barcosEnCampo.size(); i++){
-			System.out.println(barcosEnCampo.get(i));
+			System.out.println();
 		}
 	}
 
-	public ArrayList<interfazBarco> getBarcosEnCampo() {
-		return barcosEnCampo;
-	}
 
-	public void setBarcosEnCampo(ArrayList<interfazBarco> barcosEnCampo) {
-		this.barcosEnCampo = barcosEnCampo;
-	}
 
-	public ArrayList<Coordenada> getTirosDados() {
-		return tirosDados;
-	}
 
-	public void setTirosDados(ArrayList<Coordenada> tirosDados) {
-		this.tirosDados = tirosDados;
-	}
-
-	public Coordenada getDisparo() {
-		return disparo;
-	}
-
-	public void setDisparo(Coordenada disparo) {
-		this.disparo = disparo;
-	}
-	
-	
-	
 }

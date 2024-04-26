@@ -1,22 +1,12 @@
-import interfezBarcos.interfazBarco;
-
-import java.util.Random;
-import java.util.Scanner;
-
-import org.omg.PortableInterceptor.Interceptor;
-
-import Barcos.BarcoBatalla;
-import Barcos.Intercepto;
-import Barcos.Patrulla;
-import Barcos.Portaaviones;
-import Barcos.Submarino;
 import CampoBatalla.CampoBatalla;
-import Coordenada.Coordenada;
 
 
 public class main {
 	public static void main(String[] args){
-		Scanner t = new Scanner(System.in);
+		CampoBatalla campo = new CampoBatalla(10,10);
+		campo.generarTablero();
+		campo.mostrarTablero();
+		/*Scanner t = new Scanner(System.in);
 		int corX = 0;
 		int corY = 0;
 		Coordenada disparo;
@@ -55,16 +45,7 @@ public class main {
 			
 			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	*/
 		
 	}
 }
