@@ -1,10 +1,18 @@
+import Barcos.BarcoBatalla;
 import CampoBatalla.CampoBatalla;
+import Coordenada.Coordenada;
 
 
 public class main {
 	public static void main(String[] args){
 		CampoBatalla campo = new CampoBatalla(10,10);
 		campo.generarTablero();
+		campo.mostrarTablero();
+
+		Coordenada coordenadaBB = new Coordenada(1,1);
+		BarcoBatalla barcoBatalla = new BarcoBatalla(true, coordenadaBB);
+
+		campo.agregarBarco(barcoBatalla);
 		campo.mostrarTablero();
 		/*Scanner t = new Scanner(System.in);
 		int corX = 0;

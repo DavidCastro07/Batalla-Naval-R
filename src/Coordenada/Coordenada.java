@@ -5,12 +5,11 @@ import Barco.Barco;
 public class Coordenada {
 	private Integer coordX;
 	private Integer coordY;
-	private Barco barco;
+	private Barco barco = null;
 
 	public Coordenada(Integer coordX, Integer coordY) {
 		this.coordX = coordX;
 		this.coordY = coordY;
-		barco = null;
 	}
 
 	public Integer getCoordX() {

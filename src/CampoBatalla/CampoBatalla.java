@@ -1,21 +1,26 @@
 package CampoBatalla;
 
 import java.util.ArrayList;
+
+import Barco.Barco;
+import Barcos.BarcoBatalla;
 import Coordenada.Coordenada;
 
 
 public class CampoBatalla {
 
-	private Integer tamanioX;
-	private Integer tamanioY;
-	private ArrayList<Coordenada> tablero;
+	private final Integer tamanioX;
+	private final Integer tamanioY;
+	private final ArrayList<Coordenada> tablero;
+	//private ArrayList<Barco> listaBarcos;
 	//private ArrayList<Coordenada> tirosDados;
-	private Coordenada disparo;
+	//private Coordenada disparo;
 
 	public CampoBatalla(Integer tamanioX, Integer tamanioY){
 		this.tamanioX = tamanioX;
 		this.tamanioY = tamanioY;
 		tablero = new ArrayList<Coordenada>();
+		//listaBarcos = new ArrayList<Barco.Barco>();
 		//tirosDados = new ArrayList<Coordenada>();
 	}
 
@@ -46,7 +51,10 @@ public class CampoBatalla {
 						if(coord.getBarco() == null){
 							System.out.print("- "); // Si hay un barco en null, imprimir "-" seria el agua
 							break;
-						}else{
+						} else if (coord.getBarco() instanceof BarcoBatalla) {
+							System.out.print("B "); // Si hay un barco en null, imprimir "-" seria el agua
+							break;
+						} else{
 							System.out.print("1 "); // Si hay una coordenada en esta posición, imprimir "1"
 							break;
 						}
@@ -60,6 +68,23 @@ public class CampoBatalla {
 		}
 	}
 
+	public void agregarBarco(Barco barco){
+		boolean verificador = false;
+		if (barco.getDireccion()){//vertical
+			for (int i = barco.getCoordenada().getCoordX(); i <= barco.getCoordenada().getCoordX() + barco.getTamanio(); i++) {
+				for (int j = barco.getCoordenada().getCoordY(); j == barco.getCoordenada().getCoordY() ; j++) {
+					for (Coordenada coor : tablero){
+						if (coor.getCoordX().equals(i) &&
+						coor.getCoordY().equals(j) && coor.getBarco() == null){
+							coor.setBarco(barco);
+						}
+					}
+				}
+			}
+		}//else{//horizontal
+
+		//}
+	}
 
 
 
