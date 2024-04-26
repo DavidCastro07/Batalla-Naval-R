@@ -1,4 +1,6 @@
 import Barcos.BarcoBatalla;
+import Barcos.Intercepto;
+import Barcos.Patrulla;
 import CampoBatalla.CampoBatalla;
 import Coordenada.Coordenada;
 
@@ -10,15 +12,21 @@ public class main {
 		campo.mostrarTablero();
 
 		Coordenada coordenadaBB1 = new Coordenada(0,0);
-		BarcoBatalla barcoBatalla1 = new BarcoBatalla(true, coordenadaBB1);
+		BarcoBatalla barcoBatalla = new BarcoBatalla(true, coordenadaBB1);
 
-		campo.agregarBarco(barcoBatalla1);
+		campo.agregarBarco(barcoBatalla);
 		campo.mostrarTablero();
 
-		Coordenada coordenadaBB2 = new Coordenada(0,1);
-		BarcoBatalla barcoBatalla2 = new BarcoBatalla(false, coordenadaBB2);
+		Coordenada coordenadaBB2 = new Coordenada(8,8);
+		Intercepto intercepto = new Intercepto(false, coordenadaBB2);
 
-		campo.agregarBarco(barcoBatalla2);
+		campo.agregarBarco(intercepto);
+		campo.mostrarTablero();
+
+		Coordenada coordenadaBB3 = new Coordenada(9,9);//Este no se puede agregar porque ya existe uno antes
+		Patrulla Patrulla = new Patrulla(false, coordenadaBB3);
+
+		campo.agregarBarco(Patrulla);
 		campo.mostrarTablero();
 		/*Scanner t = new Scanner(System.in);
 		int corX = 0;

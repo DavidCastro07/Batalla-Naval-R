@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 import Barco.Barco;
 import Barcos.BarcoBatalla;
+import Barcos.Intercepto;
+import Barcos.Patrulla;
+import Barcos.Submarino;
 import Coordenada.Coordenada;
 
 
@@ -44,24 +47,29 @@ public class CampoBatalla {
 		for (int i = 0; i < tamanioX; i++) {
 			System.out.print(i + " "); // Índice de la fila
 			for (int j = 0; j < tamanioY; j++) {
-				boolean encontrado = false;
+				//boolean encontrado = false;
 				for (Coordenada coord : tablero) {
 					if (coord.getCoordX() == i && coord.getCoordY() == j) {
-						encontrado = true;
-						if(coord.getBarco() == null){
+						if (coord.getBarco() == null) {
 							System.out.print("- "); // Si hay un barco en null, imprimir "-" seria el agua
 							break;
 						} else if (coord.getBarco() instanceof BarcoBatalla) {
-							System.out.print("B "); // Si hay un barco en null, imprimir "-" seria el agua
+							System.out.print("B "); // Si hay un barco, imprimir "B" seria el agua
 							break;
-						} else{
+						} else if (coord.getBarco() instanceof Intercepto) {
+							System.out.print("I "); // Si hay un Intercepto, imprimir "I" seria el agua
+							break;
+						} else if (coord.getBarco() instanceof Patrulla) {
+							System.out.print("P "); // Si hay un Patrulla, imprimir "P" seria el agua
+							break;
+						} else if (coord.getBarco() instanceof Submarino) {
+							System.out.print("B "); // Si hay un Submarino, imprimir "S" seria el agua
+							break;
+						} else {
 							System.out.print("1 "); // Si hay una coordenada en esta posición, imprimir "1"
 							break;
 						}
 					}
-				}
-				if (!encontrado) {
-					System.out.print("0 "); // Si no hay una coordenada en esta posición, imprimir "0"
 				}
 			}
 			System.out.println();
@@ -101,6 +109,10 @@ public class CampoBatalla {
 	}
 
 	public boolean verificarVertical(Barco barco){
+		int finY = barco.getCoordenada().getCoordY() + barco.getTamanio() - 1;
+		if (finY >= tamanioY) {
+			return false; // El barco excede el límite vertical del tablero
+		}
 		for (int i = barco.getCoordenada().getCoordX(); i < barco.getCoordenada().getCoordX() + barco.getTamanio(); i++) {
 			for (int j = barco.getCoordenada().getCoordY(); j <= barco.getCoordenada().getCoordY() ; j++) {
 				for (Coordenada coord: tablero){
@@ -114,6 +126,10 @@ public class CampoBatalla {
 	}
 
 	public boolean verificarHorizontal(Barco barco){
+		int finX = barco.getCoordenada().getCoordX() + barco.getTamanio() - 1;
+		if (finX >= tamanioX) {
+			return false; // El barco excede el límite horizontal del tablero
+		}
 		for (int i = barco.getCoordenada().getCoordX(); i <= barco.getCoordenada().getCoordX(); i++) {
 			for (int j = barco.getCoordenada().getCoordY(); j < barco.getCoordenada().getCoordY() + barco.getTamanio() ; j++) {
 				for (Coordenada coord : tablero){
