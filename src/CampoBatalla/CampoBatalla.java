@@ -36,13 +36,13 @@ public class CampoBatalla {
 		// Mostrar índices de las columnas
 		System.out.print("  ");
 		for (int j = 0; j < tamanioY; j++) {
-			System.out.print(j + 1 + " ");
+			System.out.print(j + " ");
 		}
 		System.out.println();
 
 		// Mostrar el tablero con índices de las filas
 		for (int i = 0; i < tamanioX; i++) {
-			System.out.print(i + 1 + " "); // Índice de la fila
+			System.out.print(i + " "); // Índice de la fila
 			for (int j = 0; j < tamanioY; j++) {
 				boolean encontrado = false;
 				for (Coordenada coord : tablero) {
@@ -81,9 +81,18 @@ public class CampoBatalla {
 					}
 				}
 			}
-		}//else{//horizontal
-
-		//}
+		}else{//horizontal
+			for (int i = barco.getCoordenada().getCoordX(); i == barco.getCoordenada().getCoordX(); i++) {
+				for (int j = barco.getCoordenada().getCoordY(); j <= barco.getCoordenada().getCoordY() + barco.getTamanio() ; j++) {
+					for (Coordenada coor : tablero){
+						if (coor.getCoordX().equals(i) &&
+								coor.getCoordY().equals(j) && coor.getBarco() == null){
+							coor.setBarco(barco);
+						}
+					}
+				}
+			}
+		}
 	}
 
 

@@ -9,8 +9,8 @@ public class main {
 		campo.generarTablero();
 		campo.mostrarTablero();
 
-		Coordenada coordenadaBB = new Coordenada(1,1);
-		BarcoBatalla barcoBatalla = new BarcoBatalla(true, coordenadaBB);
+		Coordenada coordenadaBB = new Coordenada(0,0);
+		BarcoBatalla barcoBatalla = new BarcoBatalla(false, coordenadaBB);
 
 		campo.agregarBarco(barcoBatalla);
 		campo.mostrarTablero();
