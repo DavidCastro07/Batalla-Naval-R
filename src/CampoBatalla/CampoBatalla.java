@@ -142,4 +142,6 @@ public class CampoBatalla {
 		return true;
 	}
 
+	public Integer getTamanioX() {return tamanioX;}
+	public Integer getTamanioY(){return tamanioY;}
 }
