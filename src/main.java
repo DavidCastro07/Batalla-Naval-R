@@ -23,8 +23,8 @@ public class main {
 		campo.agregarBarco(intercepto);
 		campo.mostrarTablero();
 
-		Coordenada coordenadaBB3 = new Coordenada(9,9);//Este no se puede agregar porque ya existe uno antes
-		Patrulla Patrulla = new Patrulla(false, coordenadaBB3);
+		Coordenada coordenadaBB3 = new Coordenada(9,8);//Este no se puede agregar porque ya existe uno antes
+		Patrulla Patrulla = new Patrulla(true, coordenadaBB3);
 
 		campo.agregarBarco(Patrulla);
 		campo.mostrarTablero();

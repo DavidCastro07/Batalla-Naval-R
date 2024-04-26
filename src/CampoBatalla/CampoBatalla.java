@@ -109,8 +109,8 @@ public class CampoBatalla {
 	}
 
 	public boolean verificarVertical(Barco barco){
-		int finY = barco.getCoordenada().getCoordY() + barco.getTamanio() - 1;
-		if (finY >= tamanioY) {
+		int finX = barco.getCoordenada().getCoordX() + barco.getTamanio() - 1;
+		if (finX >= tamanioX) {
 			return false; // El barco excede el límite vertical del tablero
 		}
 		for (int i = barco.getCoordenada().getCoordX(); i < barco.getCoordenada().getCoordX() + barco.getTamanio(); i++) {
@@ -126,8 +126,8 @@ public class CampoBatalla {
 	}
 
 	public boolean verificarHorizontal(Barco barco){
-		int finX = barco.getCoordenada().getCoordX() + barco.getTamanio() - 1;
-		if (finX >= tamanioX) {
+		int finY = barco.getCoordenada().getCoordY() + barco.getTamanio() - 1;
+		if (finY >= tamanioY) {
 			return false; // El barco excede el límite horizontal del tablero
 		}
 		for (int i = barco.getCoordenada().getCoordX(); i <= barco.getCoordenada().getCoordX(); i++) {
