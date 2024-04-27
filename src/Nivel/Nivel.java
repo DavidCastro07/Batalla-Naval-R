@@ -29,6 +29,7 @@ public class Nivel {
         campoBatalla.agregarBarco(generarBarcoBatallaRandom());
         campoBatalla.agregarBarco(generarPatrullaRandom());
         campoBatalla.mostrarTablero();
+        System.out.println("Tenes " + disparos + " disparos");
         do {
             System.out.println("Elegir coordenada Fila");
             coordX = scanner.nextInt();
@@ -36,10 +37,14 @@ public class Nivel {
             coordY = scanner.nextInt();
             campoBatalla.disparar(coordX, coordY);
             disparos--;
+            System.out.println("Te quedan " + disparos + " disparos");
         }while (disparos > 0 && !campoBatalla.verificarVacio());
 
         if(campoBatalla.verificarVacio()){
             System.out.println("Felicidades, superaste el primer nivel.");
+        }
+        if(!campoBatalla.verificarVacio() && disparos <= 0){
+            System.out.println("Perdiste xd");
         }
     }
 
