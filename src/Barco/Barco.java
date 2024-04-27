@@ -1,5 +1,6 @@
 package Barco;
 
+import CampoBatalla.CampoBatalla;
 import Coordenada.Coordenada;
 
 import java.util.ArrayList;
@@ -17,29 +18,6 @@ public class Barco {
 		this.vida = tamanio;
 		this.tamanio = tamanio;
 	}
-
-	/*
-	public void generarBarco(){
-		Random r= new Random();
-
-		Integer pos = r.nextInt(10);
-		//Integer auxY = r.nextInt(10);
-		while(!(pos + TAMANIO < 10)){
-			pos = r.nextInt(10);
-		}
-		//Horizontal
-		if(this.direccion){
-
-			for(int i = pos, j = 0; i < pos+TAMANIO; i++,j++ ){
-				coordenadas[j] = new Coordenada(i,pos);
-			}
-		}else{
-			for(int i = pos,j = 0; i < pos+TAMANIO; i++,j++ ){
-				coordenadas[j] = new Coordenada(pos,i);
-			}
-		}
-	}
-	*/
 
 	public Coordenada getCoordenada(){return coordenada;}
 	public boolean getDireccion(){return direccion;}

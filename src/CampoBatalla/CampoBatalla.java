@@ -107,7 +107,6 @@ public class CampoBatalla {
 			}
 		}
 	}
-
 	public boolean verificarVertical(Barco barco){
 		int finX = barco.getCoordenada().getCoordX() + barco.getTamanio() - 1;
 		if (finX >= tamanioX) {
@@ -124,7 +123,6 @@ public class CampoBatalla {
 		}
 		return true;
 	}
-
 	public boolean verificarHorizontal(Barco barco){
 		int finY = barco.getCoordenada().getCoordY() + barco.getTamanio() - 1;
 		if (finY >= tamanioY) {
@@ -141,7 +139,29 @@ public class CampoBatalla {
 		}
 		return true;
 	}
-
+	public void disparar(Integer coordX, Integer coodY){
+		for (Coordenada coord: getTablero()){
+			if(coord.getCoordX() == coordX && coord.getCoordY() == coodY){
+				if (coord.getBarco() == null){
+					System.out.println("No le diste a nada");
+					mostrarTablero();
+				}else {
+					System.out.println("Le diste a un barco");
+					coord.setBarco(null);
+					mostrarTablero();
+				}
+			}
+		}
+	}
+	public boolean verificarVacio(){
+		for (Coordenada coord: tablero){
+			if (coord.getBarco() != null){
+				return false;
+			}
+		}
+		return true;
+	}
 	public Integer getTamanioX() {return tamanioX;}
 	public Integer getTamanioY(){return tamanioY;}
+	public ArrayList<Coordenada> getTablero(){return tablero;}
 }
