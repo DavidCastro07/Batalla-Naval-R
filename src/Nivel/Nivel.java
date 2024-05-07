@@ -5,6 +5,7 @@ import Barcos.Patrulla;
 import CampoBatalla.CampoBatalla;
 import Coordenada.Coordenada;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -29,21 +30,28 @@ public class Nivel {
         campoBatalla.agregarBarco(generarPatrullaRandom());
         campoBatalla.mostrarTablero();
         System.out.println("Tenes " + disparos + " disparos");
+        
         do {
-            System.out.println("Elegir coordenada Fila");
-            coordX = scanner.nextInt();
-            System.out.println("Elegir coordenada Columna");
-            coordY = scanner.nextInt();
-            campoBatalla.disparar(coordX, coordY);
-            disparos--;
-            System.out.println("Te quedan " + disparos + " disparos");
-        }while (disparos > 0 && !campoBatalla.verificarVacio());
+            try {
+                System.out.println("Elegir coordenada Fila");
+                coordX = scanner.nextInt();
+                System.out.println("Elegir coordenada Columna");
+                coordY = scanner.nextInt();
+
+                campoBatalla.disparar(coordX, coordY);
+                disparos--;
+                System.out.println("Te quedan " + disparos + " disparos");
+            } catch (InputMismatchException e) {
+                System.out.println("Por favor, ingresa un número entero válido.");
+                scanner.next(); // Limpiar el buffer del scanner
+            }
+        } while (disparos > 0 && !campoBatalla.verificarVacio());
 
         if(campoBatalla.verificarVacio()){
             System.out.println("Felicidades, superaste el primer nivel.");
         }
         if(!campoBatalla.verificarVacio() && disparos <= 0){
-            System.out.println("Perdiste xd");
+            System.out.println("Perdiste");
         }
     }
 
