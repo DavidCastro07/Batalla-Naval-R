@@ -1,8 +1,4 @@
-import Barcos.BarcoBatalla;
-import Barcos.Intercepto;
-import Barcos.Patrulla;
 import CampoBatalla.CampoBatalla;
-import Coordenada.Coordenada;
 import Nivel.Nivel;
 
 import java.util.Scanner;

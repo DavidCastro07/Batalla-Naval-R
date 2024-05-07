@@ -1,8 +1,5 @@
 package Barcos;
 
-import java.util.Arrays;
-import java.util.Random;
-
 import Barco.Barco;
 import Coordenada.Coordenada;
 

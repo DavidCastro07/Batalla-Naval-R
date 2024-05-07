@@ -1,10 +1,6 @@
 package Barco;
 
-import CampoBatalla.CampoBatalla;
 import Coordenada.Coordenada;
-
-import java.util.ArrayList;
-import java.util.Random;
 
 public class Barco {
 	private boolean direccion;// false: horizontal, true: vertical

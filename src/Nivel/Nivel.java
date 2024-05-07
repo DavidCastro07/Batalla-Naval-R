@@ -1,6 +1,5 @@
 package Nivel;
 
-import Barco.Barco;
 import Barcos.BarcoBatalla;
 import Barcos.Patrulla;
 import CampoBatalla.CampoBatalla;

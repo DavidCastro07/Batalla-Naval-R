@@ -15,16 +15,11 @@ public class CampoBatalla {
 	private final Integer tamanioX;
 	private final Integer tamanioY;
 	private final ArrayList<Coordenada> tablero;
-	//private ArrayList<Barco> listaBarcos;
-	//private ArrayList<Coordenada> tirosDados;
-	//private Coordenada disparo;
 
 	public CampoBatalla(Integer tamanioX, Integer tamanioY){
 		this.tamanioX = tamanioX;
 		this.tamanioY = tamanioY;
 		tablero = new ArrayList<Coordenada>();
-		//listaBarcos = new ArrayList<Barco.Barco>();
-		//tirosDados = new ArrayList<Coordenada>();
 	}
 
 	public void generarTablero(){
@@ -34,7 +29,6 @@ public class CampoBatalla {
 			}
 		}
 	}
-
 	public void mostrarTablero() {
 		// Mostrar índices de las columnas
 		System.out.print("  ");
@@ -75,7 +69,6 @@ public class CampoBatalla {
 			System.out.println();
 		}
 	}
-
 	public void agregarBarco(Barco barco){
 		if (barco.getDireccion()){//vertical
 			if (verificarVertical(barco)){
