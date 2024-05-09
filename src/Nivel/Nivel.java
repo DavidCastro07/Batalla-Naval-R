@@ -23,8 +23,7 @@ public class Nivel {
         Integer disparos = 15;
 
         campoBatalla.generarTablero();
-        campoBatalla.mostrarTablero();
-
+        //campoBatalla.mostrarTablero();
 
         campoBatalla.agregarBarco(generarBarcoBatallaRandom());
         campoBatalla.agregarBarco(generarPatrullaRandom());

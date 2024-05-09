@@ -132,6 +132,14 @@ public class CampoBatalla {
 		}
 		return true;
 	}
+	public boolean verificarVacio(){
+		for (Coordenada coord: tablero){
+			if (coord.getBarco() != null){
+				return false;
+			}
+		}
+		return true;
+	}
 	public void disparar(Integer coordX, Integer coodY){
 		for (Coordenada coord: getTablero()){
 			if(coord.getCoordX() == coordX && coord.getCoordY() == coodY){
@@ -146,14 +154,7 @@ public class CampoBatalla {
 			}
 		}
 	}
-	public boolean verificarVacio(){
-		for (Coordenada coord: tablero){
-			if (coord.getBarco() != null){
-				return false;
-			}
-		}
-		return true;
-	}
+
 	public Integer getTamanioX() {return tamanioX;}
 	public Integer getTamanioY(){return tamanioY;}
 	public ArrayList<Coordenada> getTablero(){return tablero;}

@@ -1,5 +1,6 @@
 package Coordenada;
 
+import java.util.Objects;
 import Barco.Barco;
 
 public class Coordenada {
@@ -27,5 +28,15 @@ public class Coordenada {
 	public Barco getBarco(){return barco;}
 	public void setBarco(Barco barco){this.barco = barco;}
 
-	
+	@Override// las coordenadas se compararán correctamente cuando uses el método contains() en el ArrayList tablero
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Coordenada that = (Coordenada) o;
+		return coordX.equals(that.coordX) && coordY.equals(that.coordY);
+	}
+	@Override// Dos objetos que sean iguales según el método equals() deben tener el mismo código hash
+	public int hashCode() {
+		return Objects.hash(coordX, coordY);
+	}
 }
