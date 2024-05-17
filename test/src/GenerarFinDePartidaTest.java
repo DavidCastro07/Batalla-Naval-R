@@ -9,10 +9,9 @@ import Barcos.Patrulla;
 class GenerarFinDePartidaTest {
 
 	@Test
-
-    public static void main(String[] args) {
+	public void main() {
 		
-        Integer cordX = 5, cordY = 5;
+        int cordX = 5, cordY = 5;
 		
 		System.out.println("Seleccionaste la opción 1");
 		CampoBatalla campoBatalla = new CampoBatalla(5,5);
