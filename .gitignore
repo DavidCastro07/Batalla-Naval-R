@@ -1,6 +1,5 @@
 # IntelliJ IDEA
 .idea/
-.settings/
 *.iws
 *.iml
 *.ipr
