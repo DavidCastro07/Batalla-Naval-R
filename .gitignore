@@ -1,55 +1,89 @@
-# IntelliJ IDEA
+# Directorios generados por el IDE IntelliJ IDEA
 .idea/
-*.iws
 *.iml
-*.ipr
+*.iws
 out/
+target/
+bin/
 
-# Compiled class file
+# Archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación de Java
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.ear
 
-# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Logs y bases de datos
+*.log
+*.sql
+*.sqlite
 
-# Maven specific files
+# Directorios de configuración de Maven
+.mvn/
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
 
-# Eclipse specific files
+# Directorios de configuración de Gradle
+.gradle/
+build/
+
+# Dependencias descargadas por Gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+# Directorios y archivos de configuración de distribución de Linux
+dist/
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+*.swp
+*.swo
+
+# Archivos de configuración de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos temporales de ejecución
+*.pid
+
+# Archivos de cobertura de pruebas
+coverage/
+*.lcov
+
+# Directorios de configuración de IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Directorios de configuración de Eclipse
 .project
 .classpath
-.cpld
+.cproject
 .settings/
 
-# VS Code
-.vscode/
-
-# Temporary files
-*.tmp
-*.bak
-*.swp
-*~.nib
-*.stackdump
-
-# macOS specific files
+# Archivos específicos de MacOS
 .DS_Store
-.AppleDouble
-.LSOverride
+
+# Archivos generados por el compilador
+*.class
+*.jar
+*.war
+*.ear
+*.dll
+*.exe
+
+# Directorios de dependencias
+lib/
+node_modules/
+
+# Archivos de logs
+*.log
+
+# Directorios de archivos temporales
+temp/
+tmp/
