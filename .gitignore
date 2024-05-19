@@ -12,7 +12,7 @@ Thumbs.db
 
 # Archivos de compilación de Java
 *.class
-*.jar
+#*.jar
 *.war
 *.ear
 
