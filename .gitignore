@@ -71,7 +71,7 @@ coverage/
 
 # Archivos generados por el compilador
 *.class
-*.jar
+#*.jar
 *.war
 *.ear
 *.dll
