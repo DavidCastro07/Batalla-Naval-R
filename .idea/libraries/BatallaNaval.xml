@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="BatallaNaval">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jfontchooser-sample-1.0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jl1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfontchooser-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfontchooser-1.0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfontchooser-sample-1.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

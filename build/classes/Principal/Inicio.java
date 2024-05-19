@@ -5,13 +5,6 @@ import Clases.Efecto;
 import Interfaz.Juego;
 
 public class Inicio {
-    
-    /*
-    *
-    *@autor Fernando Huañec H.
-    *@mail xfer94x@gmail.com    
-    *
-    */
 
     public static void main(String[] args) {
         Juego vista = new Juego();
