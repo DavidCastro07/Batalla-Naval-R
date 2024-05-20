@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriasAgregar/jfontchooser-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriasAgregar/jfontchooser-1.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriasAgregar/jfontchooser-sample-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriasAgregar/jfontchooser-sample-1.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriasAgregar/jl1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/Clases/Jugar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Clases/Jugar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "new-feature",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Pablo/OneDrive/Escritorio/RamiroIngDelSoftware/BatallaNaval/LibreriasAgregar",
     "node.js.detected.package.eslint": "true",
@@ -73,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716227691816</updated>
-      <workItem from="1716227692963" duration="974000" />
+      <workItem from="1716227692963" duration="1689000" />
     </task>
     <servers />
   </component>

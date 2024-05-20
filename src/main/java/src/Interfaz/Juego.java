@@ -1,13 +1,7 @@
 package Interfaz;
 
 public class Juego extends javax.swing.JFrame {
-    
-    /*
-    *
-    *@autor Fernando Huañec H.
-    *@mail xfer94x@gmail.com    
-    *
-    */
+
 
     public Juego() {
         initComponents();        

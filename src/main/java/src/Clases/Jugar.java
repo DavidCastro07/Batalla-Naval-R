@@ -10,13 +10,6 @@ import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 public class Jugar {
-    
-    /*
-    *
-    *@autor Fernando Huañec H.
-    *@mail xfer94x@gmail.com    
-    *
-    */
 
     JButton MemoricBoton[];
     JButton MemoricBase[];
