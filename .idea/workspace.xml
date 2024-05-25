@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="Agruegue las librerias">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/Controles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/Controles.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716227691816</updated>
       <workItem from="1716227692963" duration="2072000" />
-      <workItem from="1716583713703" duration="422000" />
+      <workItem from="1716583713703" duration="1550000" />
     </task>
     <task id="LOCAL-00001" summary="Agruegue las librerias">
       <option name="closed" value="true" />
@@ -79,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716229445494</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Agruegue las librerias">
+      <option name="closed" value="true" />
+      <created>1716584319164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716584319164</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
