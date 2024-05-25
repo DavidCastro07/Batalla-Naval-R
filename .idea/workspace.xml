@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="Agruegue las librerias">
+    <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="agregue las dependencias al pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/Controles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/Controles.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,27 +27,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Inicio.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;new-feature&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pablo/OneDrive/Escritorio/RamiroIngDelSoftware/BatallaNaval/LibreriasAgregar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Inicio.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "new-feature",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Pablo/OneDrive/Escritorio/RamiroIngDelSoftware/BatallaNaval/LibreriasAgregar/jl1.0.1.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pablo\OneDrive\Escritorio\RamiroIngDelSoftware\BatallaNaval\LibreriasAgregar" />
@@ -71,6 +73,9 @@
       <updated>1716227691816</updated>
       <workItem from="1716227692963" duration="2072000" />
       <workItem from="1716583713703" duration="1550000" />
+      <workItem from="1716670716228" duration="39000" />
+      <workItem from="1716671705566" duration="382000" />
+      <workItem from="1716672330632" duration="1844000" />
     </task>
     <task id="LOCAL-00001" summary="Agruegue las librerias">
       <option name="closed" value="true" />
@@ -88,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716584319164</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="agregue las dependencias al pom.xml">
+      <option name="closed" value="true" />
+      <created>1716670570529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716670570529</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Agruegue las librerias" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agruegue las librerias" />
+    <MESSAGE value="agregue las dependencias al pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregue las dependencias al pom.xml" />
   </component>
 </project>

@@ -36,6 +36,9 @@ jobs:
       - name: Display Maven version
         run: mvn -v
 
+      - name: Display Java version
+        run: java -version
+
       - name: Install dependencies and test
         run: mvn clean install
 

@@ -24,19 +24,23 @@
     <dependency>
       <groupId>com.example</groupId>
       <artifactId>jfontchooser</artifactId>
-      <version>1.0.4</version>
+      <version>1.0.5</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/LibreriasAgregar/jfontchooser-1.0.5.jar</systemPath>
     </dependency>
-    <!-- datechooser 1.0.5 -->
     <dependency>
       <groupId>com.example</groupId>
       <artifactId>jfontchooser</artifactId>
       <version>1.0.5</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/LibreriasAgregar/jfontchooser-1.0.4.jar</systemPath>
     </dependency>
-    <!-- ji 1.0.1 -->
     <dependency>
       <groupId>com.example</groupId>
       <artifactId>ji</artifactId>
       <version>1.0.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/LibreriasAgregar/jl1.0.1.jar</systemPath>
     </dependency>
   </dependencies>
 </project>
