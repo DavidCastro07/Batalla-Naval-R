@@ -3,6 +3,8 @@ name: Java CI
 on:
   push:
     branches: [ new-feature ]
+  pull_request:
+    branches: [ new-feature ]
 
 jobs:
   build:
@@ -18,14 +20,21 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '18'
+          cache: maven
+
+      - name: Install Maven
+        run: sudo apt-get install -y maven
 
       - name: Cache Maven packages
         uses: actions/cache@v4
         with:
-          path: ~/.m2
+          path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+
+      - name: Display Maven version
+        run: mvn -v
 
       - name: Install dependencies and test
         run: mvn clean install
