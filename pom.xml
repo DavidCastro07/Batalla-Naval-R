@@ -26,7 +26,7 @@
       <artifactId>jfontchooser</artifactId>
       <version>1.0.4</version>
     </dependency>
-    <!-- jfontchooser 1.0.5 -->
+    <!-- datechooser 1.0.5 -->
     <dependency>
       <groupId>com.example</groupId>
       <artifactId>jfontchooser</artifactId>

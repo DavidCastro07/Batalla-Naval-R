@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="Agruegue las librerias">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivos/Controles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/Controles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
