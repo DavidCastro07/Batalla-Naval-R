@@ -42,7 +42,8 @@
       <artifactId>ji</artifactId>
       <version>1.0.1</version>
       <scope>system</scope>
-      <systemPath>${project.basedir}/LibreriasAgregar/ji-1.0.1.jar</systemPath>
+      <systemPath>${project.basedir}/LibreriasAgregar/jl1.0.1.jar</systemPath>
+    </dependency>
     </dependency>
   </dependencies>
 
