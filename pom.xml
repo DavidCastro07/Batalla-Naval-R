@@ -44,7 +44,6 @@
       <scope>system</scope>
       <systemPath>${project.basedir}/LibreriasAgregar/jl1.0.1.jar</systemPath>
     </dependency>
-    </dependency>
   </dependencies>
 
   <build>
