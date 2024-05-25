@@ -21,5 +21,22 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.example</groupId>
+      <artifactId>jfontchooser</artifactId>
+      <version>1.0.4</version>
+    </dependency>
+    <!-- jfontchooser 1.0.5 -->
+    <dependency>
+      <groupId>com.example</groupId>
+      <artifactId>jfontchooser</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+    <!-- ji 1.0.1 -->
+    <dependency>
+      <groupId>com.example</groupId>
+      <artifactId>ji</artifactId>
+      <version>1.0.1</version>
+    </dependency>
   </dependencies>
 </project>
