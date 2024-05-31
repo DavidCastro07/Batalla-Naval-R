@@ -12,5 +12,6 @@ public class Inicio {
         ControlJuego control = new ControlJuego(vista, efecto.BotonBase, efecto.BotonMapa, efecto.Muestra);
         control.IniciarJuego();
         vista.setVisible(true);
+        //r
     }
 }
