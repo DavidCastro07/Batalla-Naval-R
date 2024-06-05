@@ -57,11 +57,11 @@
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="jProgressBar1" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <EmptySpace min="0" pref="18" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jLabel61" min="-2" pref="162" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jLabel63" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jEmpezar" min="-2" pref="165" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                                   <Component id="jConfiguracion" min="-2" pref="165" max="-2" attributes="0"/>
@@ -81,10 +81,7 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="jPanel7" max="32767" attributes="0"/>
-                                              <Component id="jLabel63" max="32767" attributes="0"/>
-                                          </Group>
+                                          <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -114,18 +111,16 @@
                           <Component id="jLabel62" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jEmpezar" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jClasificacion" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jReiniciar" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jConfiguracion" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel61" alignment="3" min="-2" pref="17" max="-2" attributes="0"/>
+                          <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jSalir" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -149,7 +144,6 @@
                     <LineBorder roundedCorners="true" thickness="5"/>
                   </Border>
                   <Font PropertyName="font" name="Tahoma" size="15" style="1"/>
-                  <Color PropertyName="color" blue="0" green="0" red="0" type="rgb"/>
                 </TitledBorder>
               </Border>
             </Property>
@@ -2352,7 +2346,6 @@
                     <LineBorder roundedCorners="true" thickness="5"/>
                   </Border>
                   <Font PropertyName="font" name="Tahoma" size="15" style="1"/>
-                  <Color PropertyName="color" blue="0" green="0" red="0" type="rgb"/>
                 </TitledBorder>
               </Border>
             </Property>
@@ -4556,7 +4549,6 @@
                     <LineBorder roundedCorners="true" thickness="2"/>
                   </Border>
                   <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
-                  <Color PropertyName="color" blue="0" green="0" id="black" palette="1" red="0" type="palette"/>
                 </TitledBorder>
               </Border>
             </Property>
@@ -4598,71 +4590,125 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jButton451" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton452" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton453" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton454" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton455" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jButton456" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton457" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton458" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton459" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jButton460" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton461" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton462" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jButton463" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  <Component id="jButton464" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jButton456" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                          <Component id="jButton457" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                          <Component id="jButton458" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                          <Component id="jButton459" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jButton463" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                          <Component id="jButton464" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jButton483" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="jButton451" min="-2" pref="25" max="-2" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                                          <Component id="jButton452" min="-2" pref="25" max="-2" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                                          <Component id="jButton453" min="-2" pref="25" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Component id="jLabel70" min="-2" pref="74" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                                  <Component id="jButton454" min="-2" pref="25" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                  <Component id="jLabel69" min="-2" pref="99" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                          <Component id="jButton455" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton483" min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                          <Component id="jLabel71" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jButton460" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                              <Component id="jButton461" min="-2" pref="25" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="jLabel72" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jButton462" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButton451" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="jButton452" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jButton453" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jButton454" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jButton455" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jButton451" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jButton452" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButton456" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="jButton457" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jButton458" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jButton459" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jButton456" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jButton457" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButton460" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="jButton461" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="jButton462" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jButton462" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jButton460" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="jButton461" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel72" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel73" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
-                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jButton463" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jButton464" min="-2" pref="25" max="-2" attributes="0"/>
@@ -4748,6 +4794,46 @@
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel69">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Portaaviones"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel70">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Submarino"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel71">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Fragata"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel72">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Buque"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel73">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Patrulla"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -4917,22 +5003,37 @@
         </Container>
         <Component class="javax.swing.JButton" name="jEmpezar">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Rubik" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Empezar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jEmpezarActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jConfiguracion">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Rubik" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Configuracion"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jConfiguracionActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jReiniciar">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Rubik" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Reinicar"/>
           </Properties>
           <AuxValues>
@@ -4941,8 +5042,14 @@
         </Component>
         <Component class="javax.swing.JButton" name="jSalir">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Rubik" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jSalirActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
@@ -5004,6 +5111,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jClasificacion">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Rubik" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Clasificaci&#xf3;n"/>
           </Properties>
           <AuxValues>
@@ -5022,25 +5132,16 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel61">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="ff" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="toolTipText" type="java.lang.String" value="asd"/>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel63">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="1"/>
+              <Font name="Lucida Calligraphy" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="66" red="66" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="JFH2"/>
+            <Property name="text" type="java.lang.String" value="By TechBuilders"/>
           </Properties>
         </Component>
       </SubComponents>

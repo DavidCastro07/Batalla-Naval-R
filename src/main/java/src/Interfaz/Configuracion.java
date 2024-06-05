@@ -235,7 +235,7 @@ public class Configuracion extends javax.swing.JDialog {
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Tiempo de Respuesta de Atake de la Computadora:");
+        jLabel2.setText("Tiempo de Respuesta de ataque de la Computadora:");
 
         jSlider1.setMajorTickSpacing(1);
         jSlider1.setMaximum(5);
