@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="agregando detalle a la interfaz">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivos/color.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/color.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="Cambios interfaz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +81,7 @@
       <workItem from="1716671705566" duration="382000" />
       <workItem from="1716672330632" duration="1844000" />
       <workItem from="1717796212640" duration="99000" />
-      <workItem from="1718224509525" duration="2337000" />
+      <workItem from="1718224509525" duration="2704000" />
     </task>
     <task id="LOCAL-00001" summary="Agruegue las librerias">
       <option name="closed" value="true" />
@@ -112,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716670570529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambios interfaz">
+      <option name="closed" value="true" />
+      <created>1718228196192</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718228196192</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Agruegue las librerias" />
     <MESSAGE value="agregue las dependencias al pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue las dependencias al pom.xml" />
+    <MESSAGE value="Cambios interfaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios interfaz" />
   </component>
 </project>
