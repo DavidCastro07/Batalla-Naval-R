@@ -3,11 +3,19 @@ package Interfaz;
 import src.Interfaz.MusicPlayer;
 
 public class Juego extends javax.swing.JFrame {
+    private static Juego instance;
     private final MusicPlayer music = new MusicPlayer("Sound/musica-fondo.wav");
 
     public Juego() {
         initComponents();
         music.play();
+    }
+
+    public static synchronized Juego getInstance() {
+        if (instance == null) {
+            instance = new Juego();
+        }
+        return instance;
     }
     
     @SuppressWarnings("unchecked")

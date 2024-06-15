@@ -9,7 +9,8 @@ import javax.swing.JButton;
 import javax.swing.Timer;
 
 public final class Efecto {
-    
+
+    private static Efecto instance;
     public JButton BotonBase[];
     public JButton BotonMapa[];
     public JButton Muestra[];
@@ -38,6 +39,13 @@ public final class Efecto {
         ocultar(false);
         objTimer = new Timer(25,new ClaseTimer());
         objTimer.start();  
+    }
+
+    public static synchronized Efecto getInstance(Juego juego) {
+        if (instance == null) {
+            instance = new Efecto(juego);
+        }
+        return instance;
     }
     
     private class ClaseTimer implements ActionListener{

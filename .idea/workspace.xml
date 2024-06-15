@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="Cambios interfaz" />
+    <list default="true" id="4f6e9860-33f5-407e-96f3-43375aac3d0e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/Clases/Efecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Clases/Efecto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,19 +20,27 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="new-feature" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2gk3LMZ11t7fYmrm69qLeBtP0gp" />
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RamiroTabolini1905"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DavidCastro07/Batalla-Naval-R.git",
+    "accountId": "94aef06f-3b5a-46dd-9f43-334aa9f19762"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2hvlfZmV7adpoZaPsOjDkeQQHQT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,97 +49,52 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Inicio.executor": "Run",
-    "JUnit.AppTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "new-feature",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Pablo/OneDrive/Escritorio/RamiroIngDelSoftware/BatallaNaval",
+    "last_opened_file_path": "C:/Users/Rocio/Desktop/IngDelSoftware",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Pablo\OneDrive\Escritorio\RamiroIngDelSoftware\BatallaNaval\LibreriasAgregar" />
-      <recent name="C:\Users\Pablo\OneDrive\Escritorio\RamiroIngDelSoftware\BatallaNaval" />
-      <recent name="C:\Users\Pablo\OneDrive\Escritorio\RamiroIngDelSoftware\BatallaNaval\src\main\java" />
-    </key>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba806072-4fbd-46fe-9ad1-3e5b2a08dbff" name="Changes" comment="" />
-      <created>1716227691816</created>
+      <changelist id="4f6e9860-33f5-407e-96f3-43375aac3d0e" name="Changes" comment="" />
+      <created>1718482535376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716227691816</updated>
-      <workItem from="1716227692963" duration="2072000" />
-      <workItem from="1716583713703" duration="1550000" />
-      <workItem from="1716670716228" duration="39000" />
-      <workItem from="1716671705566" duration="382000" />
-      <workItem from="1716672330632" duration="1844000" />
-      <workItem from="1717796212640" duration="99000" />
-      <workItem from="1718224509525" duration="2704000" />
+      <updated>1718482535376</updated>
+      <workItem from="1718482536999" duration="3587000" />
     </task>
-    <task id="LOCAL-00001" summary="Agruegue las librerias">
-      <option name="closed" value="true" />
-      <created>1716229445494</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716229445494</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Agruegue las librerias">
-      <option name="closed" value="true" />
-      <created>1716584319164</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1716584319164</updated>
-    </task>
-    <task id="LOCAL-00003" summary="agregue las dependencias al pom.xml">
-      <option name="closed" value="true" />
-      <created>1716670570529</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1716670570529</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Cambios interfaz">
-      <option name="closed" value="true" />
-      <created>1718228196192</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1718228196192</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Agruegue las librerias" />
-    <MESSAGE value="agregue las dependencias al pom.xml" />
-    <MESSAGE value="Cambios interfaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios interfaz" />
   </component>
 </project>
