@@ -1,10 +1,13 @@
 package Interfaz;
 
-public class Juego extends javax.swing.JFrame {
+import src.Interfaz.MusicPlayer;
 
+public class Juego extends javax.swing.JFrame {
+    private final MusicPlayer music = new MusicPlayer("Sound/musica-fondo.wav");
 
     public Juego() {
-        initComponents();        
+        initComponents();
+        music.play();
     }
     
     @SuppressWarnings("unchecked")
