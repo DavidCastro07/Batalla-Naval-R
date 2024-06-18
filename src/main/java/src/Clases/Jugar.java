@@ -28,7 +28,7 @@ public class Jugar {
     BarcosEnemigos clase;
     JButton MiTiro[] = new JButton[225];
     JButton ComputadoraTiro[] = new JButton[225];
-    int t1 = 0, t2 = 0, time = 0;
+    int t1 = 0, t2 = 0, time = 0,perdidos =0,hundidos=0,disparos=0;
     int datocolor[][];
     String tempc[];
     String controles[];
@@ -62,10 +62,10 @@ public class Jugar {
         }
     }
     public void addObserver(Observer observer){observers.add(observer);}
-    public void removeOberver(Observer observer){observers.remove(observer);}
+    public void removeObserver(Observer observer){observers.remove(observer);}
     public void notifyObservers(){
         for(Observer observer:observers){
-            observer.update(2,mibarcoundido.length,computerbarcoundido.length);
+            observer.update(TiroRecorrido,hundidos,perdidos);
         }
     }
 
@@ -178,7 +178,6 @@ public class Jugar {
                 }
             }
         }
-        notifyObservers();
         MiBarcoUndido();
         HayGanador();
 
@@ -259,6 +258,8 @@ public class Jugar {
                 miBarco1[3].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco1[4].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[0] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[1]) {
@@ -268,6 +269,8 @@ public class Jugar {
                 miBarco2[2].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco2[3].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[1] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[2]) {
@@ -276,6 +279,8 @@ public class Jugar {
                 miBarco3[1].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco3[2].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[2] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[3]) {
@@ -283,6 +288,8 @@ public class Jugar {
                 miBarco4[0].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco4[1].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[3] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[4]) {
@@ -293,6 +300,8 @@ public class Jugar {
                 miBarco5[3].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco5[4].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[4] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[5]) {
@@ -302,6 +311,8 @@ public class Jugar {
                 miBarco6[2].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco6[3].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[5] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[6]) {
@@ -310,6 +321,8 @@ public class Jugar {
                 miBarco7[1].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco7[2].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[6] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[7]) {
@@ -317,21 +330,26 @@ public class Jugar {
                 miBarco8[0].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 miBarco8[1].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[7] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[8]) {
             if (miBarco9[0].getName().equals("undido")) {
                 miBarco9[0].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[8] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
         if (!mibarcoundido[9]) {
             if (miBarco10[0].getName().equals("undido")) {
                 miBarco10[0].setBackground(new Color(datocolor[0][3], datocolor[0][2], datocolor[0][1], datocolor[0][0]));
                 mibarcoundido[9] = true;
+                perdidos++;
+                notifyObservers();
             }
         }
-        notifyObservers();
     }
 
     private boolean TiroRepetidoBase(JButton fire) {
@@ -370,6 +388,8 @@ public class Jugar {
                 cptBarco1[3].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco1[4].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[0] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[1]) {
@@ -379,6 +399,8 @@ public class Jugar {
                 cptBarco2[2].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco2[3].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[1] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[2]) {
@@ -387,6 +409,8 @@ public class Jugar {
                 cptBarco3[1].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco3[2].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[2] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[3]) {
@@ -394,6 +418,8 @@ public class Jugar {
                 cptBarco4[0].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco4[1].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[3] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[4]) {
@@ -404,6 +430,8 @@ public class Jugar {
                 cptBarco5[3].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco5[4].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[4] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[5]) {
@@ -413,6 +441,8 @@ public class Jugar {
                 cptBarco6[2].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco6[3].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[5] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[6]) {
@@ -421,6 +451,8 @@ public class Jugar {
                 cptBarco7[1].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco7[2].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[6] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[7]) {
@@ -428,21 +460,26 @@ public class Jugar {
                 cptBarco8[0].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 cptBarco8[1].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[7] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[8]) {
             if (cptBarco9[0].getName().equals("undido")) {
                 cptBarco9[0].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[8] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
         if (!computerbarcoundido[9]) {
             if (cptBarco10[0].getName().equals("undido")) {
                 cptBarco10[0].setBackground(new Color(datocolor[1][3], datocolor[1][2], datocolor[1][1], datocolor[1][0]));
                 computerbarcoundido[9] = true;
+                hundidos++;
+                notifyObservers();
             }
         }
-        notifyObservers();
     }
 
     private boolean TiroRepetidoMapa(JButton temp) {

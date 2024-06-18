@@ -82,11 +82,8 @@ public class BarcosEnemigos {
                 cronometro.setLive(true);
                 cronometro.setGo(true);
                 barcoshundidos= new BarcosHundidos(juego);
-                barcoshundidos.createThread();
-                barcoshundidos.setLive(true);
-                barcoshundidos.setGo(true);
-                jugar.Iniciar();
                 jugar.addObserver(barcoshundidos);
+                jugar.Iniciar();
                 break;
             }
         }
