@@ -28,7 +28,7 @@ public class Jugar {
     BarcosEnemigos clase;
     JButton MiTiro[] = new JButton[225];
     JButton ComputadoraTiro[] = new JButton[225];
-    int t1 = 0, t2 = 0, time = 0,perdidos =0,hundidos=0,disparos=0;
+    int t1 = 0, t2 = 0, time = 0,perdidos =0,hundidos=0 ;
     int datocolor[][];
     String tempc[];
     String controles[];
@@ -65,7 +65,7 @@ public class Jugar {
     public void removeObserver(Observer observer){observers.remove(observer);}
     public void notifyObservers(){
         for(Observer observer:observers){
-            observer.update(TiroRecorrido,hundidos,perdidos);
+            observer.update(TiroRecorrido+1,hundidos,perdidos);
         }
     }
 

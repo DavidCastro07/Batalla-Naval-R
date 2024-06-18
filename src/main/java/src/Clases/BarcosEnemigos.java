@@ -18,6 +18,7 @@ public class BarcosEnemigos {
     JButton barco[];//120
     public Cronometro cronometro;
     public BarcosHundidos barcoshundidos;
+    public Porcentajes porcentajes;
     ControlMovimiento controlmovimiento;
 
     public BarcosEnemigos(Juego juego, JButton BotonMapa[], JButton BotonBase[], JButton MemoricBase[],ControlMovimiento controlmovimiento) {
@@ -83,6 +84,8 @@ public class BarcosEnemigos {
                 cronometro.setGo(true);
                 barcoshundidos= new BarcosHundidos(juego);
                 jugar.addObserver(barcoshundidos);
+                porcentajes =new Porcentajes(juego);
+                jugar.addObserver(porcentajes);
                 jugar.Iniciar();
                 break;
             }
