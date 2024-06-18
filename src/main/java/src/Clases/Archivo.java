@@ -1,8 +1,11 @@
 package Clases;
 
+import java.applet.Applet;
 import java.applet.AudioClip;
 import java.io.*;
-import javax.swing.JOptionPane;
+import java.net.URL;
+import javax.swing.*;
+
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
 
@@ -14,6 +17,7 @@ public class Archivo {
     BufferedReader LeerBufer;
     BufferedWriter EscribirBufer;
     PrintWriter Imprimir;
+    private JFileChooser fileChooser;
 
     public void concatenar(String ruta, String texto) {
         String temp = leer(ruta);
@@ -60,11 +64,15 @@ public class Archivo {
         return null;
     }
 
+    // Método setter para JFileChooser
+    public void setFileChooser(JFileChooser fileChooser) {
+        this.fileChooser = fileChooser;}
+
     public String leerGrafico() {
-        javax.swing.JFileChooser j = new javax.swing.JFileChooser();
-        j.showOpenDialog(j);
+
+        fileChooser.showOpenDialog(fileChooser);
         try {
-            String path = j.getSelectedFile().getAbsolutePath();
+            String path = fileChooser.getSelectedFile().getAbsolutePath();
             String lectura = "";
             archivo = new File(path);
             try {
@@ -84,13 +92,28 @@ public class Archivo {
         }
         return null;
     }
-    
-    public void Sonido(String Ruta){
-        //  "/Principal/java.wav"
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource(Ruta));
-        System.out.println(Ruta);
-        sonido.play();
+
+    public void sonido(String ruta) throws SoundException {
+        try {
+            URL url = getClass().getResource(ruta); // Obtiene la URL del recurso
+            if (url == null) {
+                throw new SoundException("Error: No se encontró el recurso " + ruta);
+            }
+            AudioClip sonido = Applet.newAudioClip(url); // Crea un nuevo AudioClip desde la URL
+            sonido.play(); // Reproduce el audio
+        } catch (NullPointerException e) {
+            throw new SoundException("Error: No se encontró el recurso " + ruta, e);
+        }
+    }
+
+    public static class SoundException extends Exception {
+        public SoundException(String message) {
+            super(message);
+        }
+
+        public SoundException(String message, Throwable cause) {
+            super(message, cause);
+        }
     }
     
     public void Audio(){
