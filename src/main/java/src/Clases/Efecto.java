@@ -1,6 +1,6 @@
-package Clases;
+package src.Clases;
 
-import Interfaz.Juego;
+import src.Interfaz.Juego;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,7 +23,7 @@ public final class Efecto {
     String temp[];
     int datocolor[][];
     
-    Archivo archivo;
+    src.Clases.Archivo archivo;
     
     Color colores[]={Color.RED,Color.BLUE,Color.GREEN,Color.YELLOW,Color.WHITE};
     Color pred;
@@ -100,7 +100,7 @@ public final class Efecto {
     }
     
     private void PintarMuestra(){
-        archivo = new Archivo();
+        archivo = new src.Clases.Archivo();
         temp=new String[8];
         String variable = archivo.leer("archivos/color.txt");
         tokens(variable);
@@ -129,7 +129,7 @@ public final class Efecto {
     }
     
     private void BarcosMuestra(){
-        Muestra = new JButton[30];
+        Muestra = new JButton[15];
         
         Muestra[0]=this.juego.jButton451;
         Muestra[1]=this.juego.jButton452;
@@ -146,21 +146,8 @@ public final class Efecto {
         Muestra[12]=this.juego.jButton463;
         Muestra[13]=this.juego.jButton464;
         Muestra[14]=this.juego.jButton465;
-        Muestra[15]=this.juego.jButton466;
-        Muestra[16]=this.juego.jButton467;
-        Muestra[17]=this.juego.jButton468;
-        Muestra[18]=this.juego.jButton469;
-        Muestra[19]=this.juego.jButton470;
-        Muestra[20]=this.juego.jButton471;
-        Muestra[21]=this.juego.jButton472;
-        Muestra[22]=this.juego.jButton477;
-        Muestra[23]=this.juego.jButton478;
-        Muestra[24]=this.juego.jButton479;
-        Muestra[25]=this.juego.jButton480;
-        Muestra[26]=this.juego.jButton481;
-        Muestra[27]=this.juego.jButton482;
-        Muestra[28]=this.juego.jButton483;
-        Muestra[29]=this.juego.jButton484;
+
+
     }
 
     public void Declarar_BotonBase(){

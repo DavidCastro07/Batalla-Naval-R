@@ -1,4 +1,4 @@
-package Clases;
+package src.Clases;
 
 import java.util.StringTokenizer;
 import javax.swing.JButton;
@@ -8,7 +8,7 @@ public class Niveles {
     JButton MemoricBase[];
     JButton Tablero[];
     StringTokenizer token;
-    Archivo archivo;
+    src.Clases.Archivo archivo;
     String controles[];
     int tamaño=0;
     JButton Tiros[];
@@ -23,7 +23,7 @@ public class Niveles {
     }
     
     public void Iniciar(){
-        archivo = new Archivo();
+        archivo = new src.Clases.Archivo();
         controles = new String[7];
         Tiros = new JButton[225];
         NivelMedio = new JButton[225];

@@ -1,6 +1,6 @@
-package Clases;
+package src.Clases;
 
-import Interfaz.Clasificacion;
+import src.Interfaz.Clasificacion;
 import java.awt.event.ActionEvent;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
@@ -14,14 +14,14 @@ public class Puntajes {
     Clasificacion clasificacion;    
     DefaultTableModel tabla;
     LinkedList lista;
-    Archivo archivo;
+    src.Clases.Archivo archivo;
     StringTokenizer token;
     
     public Puntajes(Clasificacion clasificacion){
         this.clasificacion=clasificacion;
         lista = new LinkedList();
         tabla = new DefaultTableModel();
-        archivo = new Archivo();
+        archivo = new src.Clases.Archivo();
         this.clasificacion.jButton1.addActionListener(new java.awt.event.ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

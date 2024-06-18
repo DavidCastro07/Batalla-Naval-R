@@ -1,13 +1,16 @@
-package Clases;
+package src.Clases;
 
-import Interfaz.Juego;
+import src.Interfaz.Juego;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
+import src.Clases.Observer;
 
 public class Jugar {
 
@@ -29,12 +32,13 @@ public class Jugar {
     int datocolor[][];
     String tempc[];
     String controles[];
-    Archivo archivo;
+    src.Clases.Archivo archivo;
     boolean actualizar = false;
     Timer objTimer;
     String Nivel;
     JButton NivelEscogido[];
     int TiroRecorrido = 0;
+    private List<Observer> observers=new ArrayList<>();
 
     public Jugar(JButton MemoricBoton[], JButton BotonMapa[], JButton BotonBase[], Juego juego, JButton MemoricBase[], BarcosEnemigos clase) {
         this.MemoricBoton = MemoricBoton;
@@ -55,6 +59,13 @@ public class Jugar {
                     BotonMapaActionPerformed(e);
                 }
             });
+        }
+    }
+    public void addObserver(Observer observer){observers.add(observer);}
+    public void removeOberver(Observer observer){observers.remove(observer);}
+    public void notifyObservers(){
+        for(Observer observer:observers){
+            observer.update(2,mibarcoundido.length,computerbarcoundido.length);
         }
     }
 
@@ -106,6 +117,7 @@ public class Jugar {
                 if (MiTurno) {
                     VerificarBarcoUndido(x, y);
                     ComputerBarcoUndido();
+                    notifyObservers();
                 }
             }
         } catch (NullPointerException e) {
@@ -166,8 +178,10 @@ public class Jugar {
                 }
             }
         }
+        notifyObservers();
         MiBarcoUndido();
         HayGanador();
+
     }
 
     private void MostrarSiMeDio(JButton tiro) {
@@ -317,6 +331,7 @@ public class Jugar {
                 mibarcoundido[9] = true;
             }
         }
+        notifyObservers();
     }
 
     private boolean TiroRepetidoBase(JButton fire) {
@@ -427,6 +442,7 @@ public class Jugar {
                 computerbarcoundido[9] = true;
             }
         }
+        notifyObservers();
     }
 
     private boolean TiroRepetidoMapa(JButton temp) {
@@ -445,7 +461,7 @@ public class Jugar {
     }
 
     private void DividirBarco() {
-        archivo = new Archivo();
+        archivo = new src.Clases.Archivo();
         tempc = new String[8];
         controles = new String[7];
         String palabra = archivo.leer("archivos/color.txt");

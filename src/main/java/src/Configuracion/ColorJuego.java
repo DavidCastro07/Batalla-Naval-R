@@ -1,9 +1,9 @@
-package Configuracion;
+package src.Configuracion;
 
-import Clases.Archivo;
-import Interfaz.ColorGeneral;
-import Interfaz.Configuracion;
-import Interfaz.Juego;
+import src.Clases.Archivo;
+import src.Interfaz.ColorGeneral;
+import src.Interfaz.Configuracion;
+import src.Interfaz.Juego;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.StringTokenizer;

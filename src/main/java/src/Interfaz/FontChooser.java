@@ -1,4 +1,4 @@
-package Interfaz;
+package src.Interfaz;
 
 public class FontChooser extends javax.swing.JDialog {
 

@@ -1,4 +1,4 @@
-package Clases;
+package src.Clases;
 
 import java.applet.AudioClip;
 import java.io.*;

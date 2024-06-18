@@ -1,4 +1,4 @@
-package Interfaz;
+package src.Interfaz;
 
 public class Clasificacion extends javax.swing.JDialog {
 

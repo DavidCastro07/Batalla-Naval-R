@@ -1,8 +1,8 @@
-package Clases;
+package src.Clases;
 
-import Configuracion.CentralConfiguracion;
-import Interfaz.Configuracion;
-import Interfaz.Juego;
+import src.Configuracion.CentralConfiguracion;
+import src.Interfaz.Configuracion;
+import src.Interfaz.Juego;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.StringTokenizer;
@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 public class ControlMovimiento {
     
     private Juego juego;
-    Archivo archivo;
+    src.Clases.Archivo archivo;
     
     JButton BotonMapa[];
     JButton BotonBase[];
@@ -271,7 +271,7 @@ public class ControlMovimiento {
     private void BarcosEnemigos(){
         if (true){
             JOptionPane.showMessageDialog(null, "Espera! \n Colocando Barcos Enemigos... ","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-            BarcosEnemigos enemigos=new BarcosEnemigos(juego, BotonMapa, BotonBase, MemoricBoton,this);
+            BarcosEnemigos enemigos = new BarcosEnemigos(juego, BotonMapa, BotonBase, MemoricBoton,this);
             enemigos.Iniciar();
         }
         DETENER=true;
@@ -285,7 +285,7 @@ public class ControlMovimiento {
     }
     
     private Color getColor(){
-        archivo = new Archivo();
+        archivo = new src.Clases.Archivo();
         String variable = archivo.leer("archivos/color.txt");
         Tokens(variable);
         Color c=(new Color(datocolor[6][3], datocolor[6][2], datocolor[6][1], datocolor[6][0]));

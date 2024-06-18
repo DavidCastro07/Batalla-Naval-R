@@ -1,6 +1,6 @@
-package Clases;
+package src.Clases;
 
-import Interfaz.Juego;
+import src.Interfaz.Juego;
 import java.awt.Color;
 import javax.swing.JButton;
 
@@ -17,6 +17,7 @@ public class BarcosEnemigos {
     boolean DETENER = false;
     JButton barco[];//120
     public Cronometro cronometro;
+    public BarcosHundidos barcoshundidos;
     ControlMovimiento controlmovimiento;
 
     public BarcosEnemigos(Juego juego, JButton BotonMapa[], JButton BotonBase[], JButton MemoricBase[],ControlMovimiento controlmovimiento) {
@@ -80,7 +81,12 @@ public class BarcosEnemigos {
                 cronometro.createThread();
                 cronometro.setLive(true);
                 cronometro.setGo(true);
+                barcoshundidos= new BarcosHundidos(juego);
+                barcoshundidos.createThread();
+                barcoshundidos.setLive(true);
+                barcoshundidos.setGo(true);
                 jugar.Iniciar();
+                jugar.addObserver(barcoshundidos);
                 break;
             }
         }

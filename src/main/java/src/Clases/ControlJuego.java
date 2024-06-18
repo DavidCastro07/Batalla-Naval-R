@@ -1,8 +1,8 @@
-package Clases;
+package src.Clases;
 
-import Interfaz.Clasificacion;
-import Interfaz.Juego;
-import Principal.Inicio;
+import src.Interfaz.Clasificacion;
+import src.Interfaz.Juego;
+import src.Principal.Inicio;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Window;

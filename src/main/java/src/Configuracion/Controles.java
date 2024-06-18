@@ -1,8 +1,8 @@
-package Configuracion;
+package src.Configuracion;
 
-import Clases.Archivo;
-import Interfaz.Configuracion;
-import Interfaz.FontChooser;
+import src.Clases.Archivo;
+import src.Interfaz.Configuracion;
+import src.Interfaz.FontChooser;
 import java.awt.event.ActionEvent;
 import java.util.StringTokenizer;
 

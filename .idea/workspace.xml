@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f6e9860-33f5-407e-96f3-43375aac3d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Clases/Efecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Clases/Efecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" afterDir="false" />
-    </list>
+    <list default="true" id="c2914a19-c2f0-4bd4-a76c-a02c820fba75" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -25,43 +26,81 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RamiroTabolini1905"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DavidCastro07/Batalla-Naval-R.git",
-    "accountId": "94aef06f-3b5a-46dd-9f43-334aa9f19762"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
-  <component name="ProjectId" id="2hvlfZmV7adpoZaPsOjDkeQQHQT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2hy2LneDhNvoHnbeMPr5tDqQNKd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Inicio.executor": "Run",
+    "Application.Inicio.executor": "Debug",
+    "Application.src.Principal.Inicio.executor": "Debug",
+    "JUnit.AppTest.executor": "Run",
+    "Maven.BatallaNaval [clean].executor": "Run",
+    "Maven.BatallaNaval [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "473",
     "git-widget-placeholder": "new-feature",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Rocio/Desktop/IngDelSoftware",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+    "last_opened_file_path": "C:/Users/dgcas/Desktop/proyecto1no/proyecto1/BatallaNaval",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.src.Principal.Inicio">
+    <configuration name="Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Principal.Inicio" />
+      <module name="BatallaNaval" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src.Principal.Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Principal.Inicio" />
+      <module name="BatallaNaval" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.Principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatallaNaval" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="src" />
+      <option name="MAIN_CLASS_NAME" value="src.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,28 +112,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.src.Principal.Inicio" />
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.Inicio" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4f6e9860-33f5-407e-96f3-43375aac3d0e" name="Changes" comment="" />
-      <created>1718482535376</created>
+      <changelist id="c2914a19-c2f0-4bd4-a76c-a02c820fba75" name="Changes" comment="" />
+      <created>1718551943457</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1718482535376</updated>
-      <workItem from="1718482536999" duration="3587000" />
+      <updated>1718551943457</updated>
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="HIGHLIGHTERS">
+                <map>
+                  <entry key="CURRENT_BRANCH" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,7 +1,7 @@
-package Configuracion;
+package src.Configuracion;
 
-import Interfaz.Configuracion;
-import Interfaz.FontChooser;
+import src.Interfaz.Configuracion;
+import src.Interfaz.FontChooser;
 import java.awt.event.ActionEvent;
 
 public class ChooserFont {

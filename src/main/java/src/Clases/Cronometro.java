@@ -1,6 +1,6 @@
-package Clases;
+package src.Clases;
 
-import Interfaz.Juego;
+import src.Interfaz.Juego;
 
 public class Cronometro implements Runnable{
     

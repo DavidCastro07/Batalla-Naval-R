@@ -1,8 +1,8 @@
-package Principal;
+package src.Principal;
 
-import Clases.ControlJuego;
-import Clases.Efecto;
-import Interfaz.Juego;
+import src.Clases.ControlJuego;
+import src.Clases.Efecto;
+import src.Interfaz.Juego;
 
 public class Inicio {
 
