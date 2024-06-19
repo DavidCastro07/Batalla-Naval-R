@@ -2,7 +2,8 @@ package src.Clases;
 
 import java.applet.AudioClip;
 import java.io.*;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
 
@@ -14,6 +15,7 @@ public class Archivo {
     BufferedReader LeerBufer;
     BufferedWriter EscribirBufer;
     PrintWriter Imprimir;
+    private JFileChooser fileChooser;
 
     public void concatenar(String ruta, String texto) {
         String temp = leer(ruta);
@@ -61,10 +63,10 @@ public class Archivo {
     }
 
     public String leerGrafico() {
-        javax.swing.JFileChooser j = new javax.swing.JFileChooser();
-        j.showOpenDialog(j);
+
+        fileChooser.showOpenDialog(fileChooser);
         try {
-            String path = j.getSelectedFile().getAbsolutePath();
+            String path = fileChooser.getSelectedFile().getAbsolutePath();
             String lectura = "";
             archivo = new File(path);
             try {
@@ -84,7 +86,7 @@ public class Archivo {
         }
         return null;
     }
-    
+
     public void Sonido(String Ruta){
         //  "/Principal/java.wav"
         AudioClip sonido;
@@ -92,7 +94,11 @@ public class Archivo {
         System.out.println(Ruta);
         sonido.play();
     }
-    
+
+    public void setFileChooser(JFileChooser fileChooser) {
+        this.fileChooser = fileChooser;}
+
+
     public void Audio(){
         try {
             FileInputStream fis;

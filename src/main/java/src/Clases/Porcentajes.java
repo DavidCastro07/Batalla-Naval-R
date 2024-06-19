@@ -21,10 +21,15 @@ import src.Clases.Observer;
         }
 
         private void ImprimirPorcentaje(int disparo, int hundido) {
-            int undido=hundido*3;
-            float tasa = (float)undido /disparo;
-            porcentaje= (int) (tasa*100);
-            this.juego.jExito.setText(String.valueOf(porcentaje));
+            if (juego != null && juego.jExito != null) {
+                int undido = hundido * 3;
+                float tasa = (float) undido / disparo;
+                int porcentaje = (int) (tasa * 100);
+                this.juego.jExito.setText(String.valueOf(porcentaje));
+            } else {
+                // Manejo de casos donde juego o jExito es null
+                System.out.println("juego or jExito is null");
+            }
         }
         }
 
