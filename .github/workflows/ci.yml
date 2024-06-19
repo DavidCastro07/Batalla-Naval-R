@@ -5,8 +5,11 @@ on:
     branches:
       - "master"
       - "develop"
+      -  "Feature"
+      - "new-feature"
+      - "new-feature-obs"
   pull_request:
-    branches: [ "master" ]
+    branches: [ "new-feature-obs" ]
 
 jobs:
   build:
