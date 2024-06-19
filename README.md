@@ -10,7 +10,7 @@ la colaboración entre miembros del equipo y la restauración de versiones anter
 <p align="center"> <strong> ¡BINVENIDO/A A BATALLA NAVAL!! <strong> </p>
 <p align="center"> Batalla Naval es una versión digital del clásico juego de mesa donde dos jugadores compiten para hundir los barcos del oponente antes de que hundan los suyos.</p>
 
-![Interfaz de usuario](/img/interfaz2.jpg "Interfaz de usuario")
+![Interfaz de usuario](/img/ultima-interfaz.jpg "Interfaz de usuario")
   
 # Requisitos
 >Java 18
