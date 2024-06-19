@@ -381,7 +381,7 @@ public class Configuracion extends javax.swing.JDialog {
         jTextArea2.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("Al comenzar, cada jugador posiciona sus barcos en el primer tablero, de forma secreta, invisible al oponente.\nCada quien ocupa, según sus preferencias, una misma cantidad de casillas, horizontal y/o verticalmente, las que representan sus naves. Ambos participantes deben ubicar igual el número de naves, por lo que es habitual, antes de comenzar, estipular de común acuerdo la cantidad y el tamaño de las naves que se posicionarán en el tablero. Así, por ejemplo, cinco casillas consecutivas conforman un portaaviones; tres, un buque, y una casilla aislada, una lancha, y los participantes podrían convenir, también a modo de ejemplo, en colocar, cada uno, dos portaaviones, tres buques y cinco lanchas.");
+        jTextArea2.setText("Al comenzar, cada jugador posiciona sus barcos en el primer tablero, de forma secreta, invisible al oponente.\nCada quien ocupa, según sus preferencias, una misma cantidad de casillas, horizontal y/o verticalmente, las que representan sus naves.");
         jTextArea2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea2);
 
