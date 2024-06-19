@@ -1,0 +1,46 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ new-feature ]
+  pull_request:
+    branches: [ new-feature ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 18
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'adopt'
+          java-version: '18'
+          cache: maven
+
+      - name: Install Maven
+        run: sudo apt-get install -y maven
+
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Display Maven version
+        run: mvn -v
+
+      - name: Display Java version
+        run: java -version
+
+      - name: Install dependencies and test
+        run: mvn clean install
+
+      - name: Run tests
+        run: mvn test

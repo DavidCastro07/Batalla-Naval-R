@@ -112,7 +112,7 @@ public class NivelesTest {
         }
     }
 
-    
+
 
     @Test
     public void testNivelPredeterminado_Facil() {
