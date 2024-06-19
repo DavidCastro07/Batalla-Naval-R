@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da5e4b57-50e6-42cf-9b3e-587bca638a64" name="Changes" comment="add dependency pom.xml 3">
+    <list default="true" id="da5e4b57-50e6-42cf-9b3e-587bca638a64" name="Changes" comment="add dependency pom.xml 4">
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718823055569</updated>
-      <workItem from="1718823057523" duration="1453000" />
+      <workItem from="1718823057523" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="add dependency pom.xml">
       <option name="closed" value="true" />
@@ -109,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718824421802</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add dependency pom.xml 4">
+      <option name="closed" value="true" />
+      <created>1718824520161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718824520161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dependency pom.xml" />
     <MESSAGE value="add dependency pom.xml 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dependency pom.xml 3" />
+    <MESSAGE value="add dependency pom.xml 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dependency pom.xml 4" />
   </component>
 </project>
