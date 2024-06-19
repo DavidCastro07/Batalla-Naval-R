@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2914a19-c2f0-4bd4-a76c-a02c820fba75" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Clases/Efecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Clases/Efecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Interfaz/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Principal/Inicio.java" afterDir="false" />
-    </list>
+    <list default="true" id="c2914a19-c2f0-4bd4-a76c-a02c820fba75" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,38 +42,36 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2hy2LneDhNvoHnbeMPr5tDqQNKd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Inicio.executor": "Debug",
-    "Application.src.Principal.Inicio.executor": "Debug",
-    "JUnit.AppTest.executor": "Run",
-    "Maven.BatallaNaval [clean].executor": "Run",
-    "Maven.BatallaNaval [install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "473",
-    "git-widget-placeholder": "new-feature-obs",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dgcas/Desktop/proyecto1no/proyecto1/BatallaNaval",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Inicio.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.src.Principal.Inicio.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BatallaNaval [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BatallaNaval [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;473&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new-feature-obs&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dgcas/Desktop/proyecto1no/proyecto1/BatallaNaval&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.src.Principal.Inicio">
     <configuration name="Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Principal.Inicio" />
@@ -117,6 +110,17 @@
       <option name="PACKAGE_NAME" value="src" />
       <option name="MAIN_CLASS_NAME" value="src.AppTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
