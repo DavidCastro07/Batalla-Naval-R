@@ -111,7 +111,7 @@ public class Niveles {
         return datofinal;
     }
     
-    private JButton [] Partir_A(int n){
+    public JButton [] Partir_A(int n){
         JButton dato_a[] = new JButton[n];
         for(int i=0;i<n;i++){
             dato_a[i] = Tiros[i];
@@ -119,7 +119,7 @@ public class Niveles {
         return dato_a;
     }
     
-    private JButton []Partir_B(int n,int x){
+    public JButton []Partir_B(int n,int x){
         JButton dato_b[] = new JButton[x];
         for(int i=0;i<x;i++){
             dato_b[i]= Tiros[(i+n)];
