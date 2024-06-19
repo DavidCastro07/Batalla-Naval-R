@@ -6,7 +6,7 @@ import src.Interfaz.MusicPlayer;
 import java.util.ArrayList;
 
 public class Juego extends javax.swing.JFrame{
-    private static Juego instance;
+    //private static Juego instance;
     private final MusicPlayer music = new MusicPlayer("Sound/musica-fondo.wav");
 
 
@@ -15,12 +15,12 @@ public class Juego extends javax.swing.JFrame{
         music.play();
     }
 
-    public static synchronized Juego getInstance() {
+    /*public static synchronized Juego getInstance() {
         if (instance == null) {
             instance = new Juego();
         }
         return instance;
-    }
+    }*/
 
     
     @SuppressWarnings("unchecked")
