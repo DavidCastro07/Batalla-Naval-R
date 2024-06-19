@@ -126,17 +126,22 @@ public class Niveles {
         }
         return dato_b;
     }
-       
-    private String GetNivel(){
+
+    public String GetNivel() {
         String palabra = archivo.leer("archivos/Controles.txt");
         token = new StringTokenizer(palabra, "%%%%");
-        while (token.hasMoreTokens()) {
-             controles[tamaño] = token.nextToken();
-             tamaño++;
-         }
+        controles = new String[7]; // Inicializar el arreglo controles
+        tamaño = 0; // Reiniciar el contador tamaño
+
+        while (token.hasMoreTokens() && tamaño < 7) {
+            controles[tamaño] = token.nextToken();
+            tamaño++;
+        }
+
         return controles[0];
-    }   
-    
+    }
+
+
     public JButton []desordenar_Barco(JButton arregloInt[]){        
         int lista_elem = arregloInt.length;        
         int [] indice= new int [lista_elem]; 

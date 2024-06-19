@@ -3,6 +3,7 @@ package src.Interfaz;
 
 import src.Interfaz.MusicPlayer;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Juego extends javax.swing.JFrame{
@@ -10,9 +11,14 @@ public class Juego extends javax.swing.JFrame{
     private final MusicPlayer music = new MusicPlayer("Sound/musica-fondo.wav");
 
 
+
     public Juego() {
         initComponents();
         music.play();
+    }
+
+    public JLabel getJExito() {
+        return jExito;
     }
 
     /*public static synchronized Juego getInstance() {
