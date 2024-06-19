@@ -3,10 +3,6 @@ name: Java CI with Maven
 on:
   push:
     branches:
-      - "master"
-      - "develop"
-      - "Feature"
-      - "new-feature"
       - "new-feature-obs"
   pull_request:
     branches:

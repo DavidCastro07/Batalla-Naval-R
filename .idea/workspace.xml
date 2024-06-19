@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da5e4b57-50e6-42cf-9b3e-587bca638a64" name="Changes" comment="add dependency pom.xml">
+    <list default="true" id="da5e4b57-50e6-42cf-9b3e-587bca638a64" name="Changes" comment="add dependency pom.xml 3">
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718823055569</updated>
-      <workItem from="1718823057523" duration="1018000" />
+      <workItem from="1718823057523" duration="1453000" />
     </task>
     <task id="LOCAL-00001" summary="add dependency pom.xml">
       <option name="closed" value="true" />
@@ -94,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718823335839</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add dependency pom.xml">
+      <option name="closed" value="true" />
+      <created>1718824086080</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718824086080</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add dependency pom.xml 3">
+      <option name="closed" value="true" />
+      <created>1718824421802</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718824421802</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dependency pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dependency pom.xml" />
+    <MESSAGE value="add dependency pom.xml 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dependency pom.xml 3" />
   </component>
 </project>
