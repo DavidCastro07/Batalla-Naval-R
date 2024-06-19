@@ -2,9 +2,9 @@ name: Java CI
 
 on:
   push:
-    branches: [ new-feature ]
+    branches: [ new-feature-obs ]
   pull_request:
-    branches: [ new-feature ]
+    branches: [ new-feature-obs ]
 
 jobs:
   build:
